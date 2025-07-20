@@ -169,7 +169,7 @@ html, body {
   /* Responsive */
   @media (max-width: 991px) {
     .hero-img {
-      max-width: 420px;
+      max-width: 20px;
     }
   }
 

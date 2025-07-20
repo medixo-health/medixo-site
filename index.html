@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medixo Healthcare</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-medixo px-3 py-2">
+  <div class="container-fluid">
+    <a class="navbar-brand medixo-logo" href="#">
+      <span class="medixo-orange">Medi</span><span class="medixo-blue">xo</span>
+      <small class="brand-tagline d-block d-lg-inline">reassuring lives</small>
+    </a>
+
+<button
+  class="navbar-toggler"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navbarNav"
+  aria-controls="navbarNav"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+
+    <div class="collapse navbar-collapse justify-content-lg-center mt-3 mt-lg-0" id="navbarNav">
+      <ul class="navbar-nav nav-spacing">
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#services">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section animate-fade-in-up" id="home">
+  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between text-white">
+    <div class="hero-left text-start text-lg-start">
+      <h1 class="display-4 fw-bold mb-3">
+        Welcome to <span class="med">Medixo</span><br>Health Services
+      </h1>
+      <p class="lead mb-4">
+        We Ensure The Well-Being of Your Health.
+      </p>
+      <button id="bookNowBtn" class="btn btn-light btn-lg">
+        Book Now
+      </button>
+      <div id="desktopNumberDisplay" style="margin-top: 10px; font-weight: 700; color: white; display: none;">
+        Call Us: +91 8310721403
+      </div>
+    </div>
+    <div class="hero-right mt-4 mt-lg-0">
+      <img src="./assets/pexels-pranidchakan-boonrom-101111-1350560.jpg" alt="Doctor illustration" class="img-fluid hero-img" />
+    </div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">About <span class="highlight-orange">Medixo</span></h2>
+      <p class="section-subtitle">
+        Medixo is committed to transforming health diagnostics with accuracy, speed, and trust.
+      </p>
+    </div>
+    <div class="about-grid">
+      <div class="about-block">
+        <div class="about-icon">🎯</div>
+        <h4 class="about-heading">Our Mission</h4>
+        <p>
+          We strive to ensure accessible, reliable, and fast diagnostic testing for all. Our goal is to empower individuals and organizations with timely health insights.
+        </p>
+      </div>
+      <div class="about-block">
+        <div class="about-icon">💡</div>
+        <h4 class="about-heading">Our Values</h4>
+        <p>
+          Quality, transparency, and innovation. Every test we deliver stands on the foundation of trust and scientific excellence.
+        </p>
+      </div>
+      <div class="about-block">
+        <div class="about-icon">🤝</div>
+        <h4 class="about-heading">Our Promise</h4>
+        <p>
+          Whether it's at home or workplace testing, Medixo guarantees confidentiality, accuracy, and compassionate care throughout your journey.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- our service-->
+<section id="services" class="services-section py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Our Services</h2>
+    <p class="lead text-muted mb-4">
+      Comprehensive healthcare solutions tailored to support every aspect of your well-being.
+    </p>
+    <div class="scroll-hint d-md-none mb-2 text-start px-2">← Swipe to see more</div>
+    <div class="services-scroll d-flex overflow-auto flex-nowrap px-2">
+      <!-- Service Cards -->
+      <div class="service-card-mini text-center mx-2 p-3 flex-shrink-0">
+        <div class="service-icon mb-2">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+        <h6 class="fw-semibold mb-1">Health Checkup</h6>
+        <p class="text-muted small mb-0">Routine wellness screenings.</p>
+      </div>
+
+      <div class="service-card-mini text-center mx-2 p-3 flex-shrink-0">
+        <div class="service-icon mb-2">
+          <i class="bi bi-file-earmark-medical-fill"></i>
+        </div>
+        <h6 class="fw-semibold mb-1">Certified Lab Tests</h6>
+        <p class="text-muted small mb-0">Accurate & NABL-certified reports.</p>
+      </div>
+
+      <div class="service-card-mini text-center mx-2 p-3 flex-shrink-0">
+        <div class="service-icon mb-2">
+          <i class="bi bi-person-circle"></i>
+        </div>
+        <h6 class="fw-semibold mb-1">Consultation</h6>
+        <p class="text-muted small mb-0">Doctor advice made simple.</p>
+      </div>
+
+      <div class="service-card-mini text-center mx-2 p-3 flex-shrink-0">
+        <div class="service-icon mb-2">
+          <i class="bi bi-capsule-pill"></i>
+        </div>
+        <h6 class="fw-semibold mb-1">Vaccination</h6>
+        <p class="text-muted small mb-0">Protect with certified vaccines.</p>
+      </div>
+
+      <div class="service-card-mini text-center mx-2 p-3 flex-shrink-0">
+        <div class="service-icon mb-2">
+          <i class="bi bi-house-heart"></i>
+        </div>
+        <h6 class="fw-semibold mb-1">Home Collection</h6>
+        <p class="text-muted small mb-0">Sample pickup from your home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- d Test-->
+<section id="diagnostics" class="py-5">
+  <div class="container">
+    <div class="test-scroll-wrapper-container">
+      <div class="scroll-hint">← Swipe to see more</div>
+      <div class="test-scroll-wrapper">
+        <!-- Test Cards -->
+        <div class="test-card-mini">
+          <img src="./assets/fbh.avif" alt="Full Body Checkup">
+          <div class="caption">Full Body Checkup</div>
+        </div>
+
+        <div class="test-card-mini">
+          <img src="./assets/ecg.webp" alt="ECG Test">
+          <div class="caption">ECG Test</div>
+        </div>
+
+        <div class="test-card-mini">
+          <img src="./assets/vdp.webp" alt="Vitamin Deficiency">
+          <div class="caption">Vitamin Deficiency</div>
+        </div>
+
+        <div class="test-card-mini">
+          <img src="./assets/pft.jpg" alt="PFT Test">
+          <div class="caption">PFT Test</div>
+        </div>
+
+        <div class="test-card-mini">
+          <img src="./assets/db.jpg" alt="Diabetes Test">
+          <div class="caption">Diabetes Test</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Offer Plan Section -->
+<section id="offer" class="offer-section text-center py-5">
+  <div class="container">
+    <a href="#" id="offerLink">
+      <img src="./assets/weboffer.jpg" alt="Full Body Checkup Offer - ₹1499" class="img-fluid offer-image" />
+    </a>
+  </div>
+</section>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal-overlay">
+  <div class="modal-box">
+    <button class="close-btn" onclick="closeBookingModal()">&times;</button>
+    <h3 style="color: orange;">Book Your Appointment</h3>
+    <form id="bookingForm">
+      <input type="text" id="bookName" placeholder="Your Name" required />
+      <input type="email" id="bookEmail" placeholder="Registered Email" required />
+      <input type="date" id="bookDate" required />
+      <button type="submit" class="btn-welcome">Book Appointment</button>
+    </form>
+  </div>
+</div>
+
+<!-- other services-->
+<section class="other-services">
+  <h2>Our Other Services</h2>
+  <div class="scroll-wrapper">
+    <div class="scroll-hint">← Swipe to see more</div>
+    <div class="scroll-row">
+      <div class="other-service-item">
+        <img src="./assets/odc.webp" alt="Online Doctor">
+        <div class="caption">Online Doctor Consultation</div>
+      </div>
+      <div class="other-service-item">
+        <img src="./assets/cw.jpg" alt="Corporate Wellness">
+        <div class="caption">Corporate Wellness</div>
+      </div>
+      <div class="other-service-item">
+        <img src="./assets/uhc.jpg" alt="Home Care">
+        <div class="caption">Emergency Care at Home</div>
+      </div>
+      <div class="other-service-item">
+        <img src="./assets/ambul.jpg" alt="Ambulance Service">
+        <div class="caption">24/7 Ambulance Availabilty</div>
+      </div>
+      <div class="other-service-item">
+        <img src="./assets/eqp.jpg" alt="Health Products">
+        <div class="caption">Health items to your Location</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- why choose-->
+<section class="why-section animate-fade-in-up">
+  <div class="container">
+    <div class="why-heading text-center">
+      <h2 class="why-title">Why Choose <span class="highlight-orange">Medixo?</span></h2>
+      <p class="why-subtitle">
+        Discover what sets us apart in making your healthcare journey smoother and smarter.
+      </p>
+    </div>
+    <div class="why-content">
+      <div class="why-list">
+        <div class="why-item active" data-index="0">
+          <h5>1. Fast and comprehensive results</h5>
+          <p>Get accurate test results quickly, covering a wide range of health diagnostics.</p>
+          <p>Receive your reports securely through our app or email.</p>
+        </div>
+        <div class="why-item" data-index="1">
+          <h5>2. Certified laboratories</h5>
+          <p>All tests are conducted in government-approved, NABL-certified labs for trusted accuracy.</p>
+          <p>Ensuring reliable diagnostics you can count on.</p>
+        </div>
+        <div class="why-item" data-index="2">
+          <h5>3. On-site testing</h5>
+          <p>Enjoy hassle-free sample collection right at your home or workplace.</p>
+          <p>Convenient scheduling tailored to your availability.</p>
+        </div>
+        <div class="why-item" data-index="3">
+          <h5>4. Confidentiality</h5>
+          <p>Your personal health data is 100% secure and shared only with your consent.</p>
+          <p>Committed to protecting your privacy at every step.</p>
+        </div>
+      </div>
+      <div class="why-image">
+        <img src="./assets/why1.webp" alt="Fast and comprehensive results" class="active" data-index="0" />
+        <img src="./assets/why2.avif" alt="Certified laboratories" data-index="1" />
+        <img src="./assets/why3.avif" alt="On-site testing" data-index="2" />
+        <img src="./assets/why4.jpg" alt="Confidentiality" data-index="3" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>Get in touch with us! </h2>
+      <p>We’d love to hear from you. Whether you have a question about our health packages, booking, or anything else — our team is ready to answer all your questions.</p>
+      <ul>
+        <li> Get answers to common queries</li>
+        <li> Reach out easily via WhatsApp</li>
+        <li> Usually responds within an hour</li>
+      </ul>
+    </div>
+    <div class="contact-right">
+      <form id="contactForm">
+        <h3>Contact Us</h3>
+        <input type="text" id="contactName" placeholder="Your Name" required />
+        <input type="email" id="contactEmail" placeholder="Your Email" required />
+        <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send via WhatsApp</button>
+        <p id="contactSuccess" style="display: none; color: green; margin-top: 10px;">Message sent successfully!</p>
+      </form>
+    </div>
+ </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section bg-dark text-light py-5">
+  <div class="container">
+    <div class="row footer-top align-items-start mb-4">
+      <div class="col-md-3 mb-4 mb-md-0 text-center text-md-start">
+        <img src="./assets/WhatsApp Image 2025-07-16 at 13.26.47_98de7189.jpg" alt="Medixo Logo" class="footer-logo-img mb-2">
+         <p class="footer-tagline">Where Healing Begins with Trust</p>
+         <address class="footer-address mt-3">
+          <strong>Address:</strong><br>
+          #70, 8th Cross, SG Kaval Sunkadakatte,<br>
+          Bengaluru, Karnataka 560091<br>
+          India<br>
+        </address>
+      </div>
+
+      <!-- Center: Quick Links -->
+      <div class="col-md-6 d-flex justify-content-center flex-wrap">
+
+        <div class="footer-links me-md-5 mb-4">
+          <h5 class="footer-links-title mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link service-link" data-service="Online Doctor Consult">Online Doctor Consultation</a></li>
+            <li><a href="#" class="footer-link service-link" data-service="Urgent Care">Urgent Care at Home</a></li>
+            <li><a href="#" class="footer-link service-link" data-service="Quick Checkup">Quick Checkup at Home</a></li>
+            <li><a href="#" class="footer-link service-link" data-service="Anual Health">Anual Healthcare</a></li>
+            <li><a href="#" class="footer-link service-link" data-service="Diagnostic Tests">Diagnostic Tests at Home</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links mb-4">
+          <h5 class="footer-links-title mb-3">More</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link service-link" data-service="Emergency Care">Emergency Care</a></li>
+            <li><a href="#" class="footer-link service-link" data-service="Medixo Ambulance">24/7 Medixo Ambulance</a></li>
+            <li><a href="#" class="footer-link service-link" data-service="Health Packages">Health Packages</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right: Social Icons -->
+      <div class="col-md-3 d-flex justify-content-center justify-content-md-end align-items-center">
+        <div class="social-icons">
+          <a href="https://wa.me/919686248218" target="_blank" class="social-link me-3" aria-label="WhatsApp"><i class="bi bi-whatsapp fs-3"></i></a>
+          <a href="https://www.instagram.com/medixohealth" target="_blank" class="social-link me-3" aria-label="Instagram"><i class="bi bi-instagram fs-3"></i></a>
+          <a href="mailto:contact@medixohealthservices@gmail.com" class="social-link me-3" aria-label="Email"><i class="bi bi-envelope fs-3"></i></a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bold Tagline -->
+    <div class="footer-tagline-bold text-center mb-3 fw-bold">
+      " Your Trusted Partner for Healthcare Excellence "
+    </div>
+    <hr>
+
+    <!-- Copyright -->
+    <div class="footer-bottom text-center mb-2">
+      © 2025 Medixo Health Services Pvt Ltd. All rights reserved.
+    </div>
+
+    <!-- Location -->
+    <div class="footer-links-bottom text-center">
+      <a href="https://www.google.com/maps/place/S+G+Kaval,+Bengaluru,+Karnataka+560091" target="_blank" rel="noopener noreferrer" class="footer-link">
+        View Location on Google Map
+      </a>
+    </div>
+  </div>
+
+  <!-- Service Modal -->
+  <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="serviceModalLabel">Service Info</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="serviceMessage">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Welcome Modal -->
+<div id="whatsappWelcomeModal" class="modal-overlay">
+  <div class="modal-box">
+    <button id="closeWelcomeModal" class="close-btn">&times;</button>
+    <h3>👋 Welcome to Medixo!</h3>
+    <p>We're excited to have you here. Want to learn more or join us? Fill in your name and email to get started on WhatsApp!</p>
+
+    <form id="welcomeWhatsAppForm">
+      <input type="text" id="welcomeName" placeholder="Your Name" required />
+      <input type="email" id="welcomeEmail" placeholder="Your Email" required />
+
+      <div class="btn-row">
+        <button type="submit" class="btn-welcome">Join Us on WhatsApp</button>
+        <!-- Inline call icon inside welcome modal -->
+        <div id="inlineCallIcon" class="call-icon-in-modal" title="Call us now">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <script src="index.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+
+</body>
+</html>

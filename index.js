@@ -69,7 +69,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
   inlineCallIcon.addEventListener("click", () => {
     const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
     if (isMobile) {
-      window.location.href = `tel:${phoneNumber}`;
+      window.location.href = `tel:${waNumber}`;
     } else {
       alert(`Call us at: ${waNumber}`);
     }

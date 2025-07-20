@@ -69,9 +69,9 @@ document.querySelectorAll('.nav-link').forEach(link => {
   inlineCallIcon.addEventListener("click", () => {
     const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
     if (isMobile) {
-      window.location.href = `tel:+91${phoneNumber}`;
+      window.location.href = `tel:{phoneNumber}`;
     } else {
-      alert(`Call us at: ${waNumber}`);
+      alert(`Call us at: {waNumber}`);
     }
   });
 });

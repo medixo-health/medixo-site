@@ -71,7 +71,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     if (isMobile) {
       window.location.href = `tel:+91${phoneNumber}`;
     } else {
-      alert(`Call us at: +91 ${phoneNumber}`);
+      alert(`Call us at: ${waNumber}`);
     }
   });
 });

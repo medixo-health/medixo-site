@@ -69,9 +69,9 @@ document.querySelectorAll('.nav-link').forEach(link => {
   inlineCallIcon.addEventListener("click", () => {
     const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
     if (isMobile) {
-      window.location.href = `tel:{phoneNumber}`;
+      window.location.href = `tel:${phoneNumber}`;
     } else {
-      alert(`Call us at: {waNumber}`);
+      alert(`Call us at: ${waNumber}`);
     }
   });
 });
@@ -180,7 +180,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   const whatsappMessage = `Hi, I'm ${name} (${email}). Here's my message: ${message}`;
   const encodedMessage = encodeURIComponent(whatsappMessage);
-  const phoneNumber = "918310721403";
+  const phoneNumber = "919686248218";
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
   const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
